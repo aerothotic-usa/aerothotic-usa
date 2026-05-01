@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aerothotic</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9fafb;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: white;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+header h1 {
+  margin: 0;
+  font-weight: 600;
+}
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+nav a:hover {
+  color: black;
+}
+
+/* HERO */
+.hero {
+  height: 500px;
+  background: url('https://www.aerothotic.com/cdn/shop/files/Desktop_Banners_9.png') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.hero h2 {
+  font-size: 42px;
+  background: rgba(0,0,0,0.4);
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 10%;
+  text-align: center;
+}
+.section h2 {
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* CATEGORIES */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.categories a {
+  padding: 10px 20px;
+  background: #111;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.categories a:hover {
+  background: #444;
+}
+
+/* PRODUCTS */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 25px;
+}
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+}
+.card p {
+  padding: 15px;
+  font-weight: 500;
+}
+
+/* ABOUT */
+.about img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+/* CONTACT */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  text-align: left;
+}
+.contact-info {
+  font-size: 15px;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+.contact-form button {
+  padding: 12px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+@media(max-width: 768px){
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>Aerothotic</h1>
+  <nav>
+    <a href="#categories">Shop</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Comfort Meets Style</h2>
+</div>
+
+<div class="section" id="categories">
+  <h2>Shop Categories</h2>
+  <div class="categories">
+    <a href="https://www.aerothotic.com/collections/flip-flops">Flip Flops</a>
+    <a href="https://www.aerothotic.com/collections/thong-sandals">Thong Sandals</a>
+    <a href="https://www.aerothotic.com/collections/slide-sandals">Slide Sandals</a>
+    <a href="https://www.aerothotic.com/collections/slingback-sandals">Slingback</a>
+    <a href="https://www.aerothotic.com/collections/slip-on-sandals">Slip-ons</a>
+    <a href="https://www.aerothotic.com/collections/clogs">Clogs</a>
+    <a href="https://www.aerothotic.com/collections/arch-support">Arch Support</a>
+    <a href="https://www.aerothotic.com/collections/plantar-fasciitis-sandals">Plantar Care</a>
+  </div>
+</div>
+
+<div class="section" id="products">
+  <h2>Featured Styles</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71kjTDzWQhL._AC_UY900_.jpg">
+      <p>Everyday Comfort Sandals</p>
+    </div>
+    <div class="card">
+      <img src="https://www.aerothotic.com/cdn/shop/files/PearlyFumeBlackLifestyle.png">
+      <p>Pearly Fume Black</p>
+    </div>
+    <div class="card">
+      <img src="https://www.aerothotic.com/cdn/shop/files/L0347_BLACK.jpg">
+      <p>Classic Black Edition</p>
+    </div>
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/81F36czwgtL._AC_UY1000_.jpg">
+      <p>Premium Cushion Walk</p>
+    </div>
+  </div>
+</div>
+
+<div class="section about">
+  <h2>Designed for Comfort & Fashion</h2>
+  <img src="https://media.licdn.com/dms/image/v2/C561BAQF3h1005nINRg/company-background_10000/company-background_10000/0/1636049672505/aerothotic_cover">
+  <p>Engineered with ergonomic support and modern aesthetics, our footwear blends wellness with everyday fashion.</p>
+</div>
+
+<div class="section" id="contact">
+  <h2>Contact Us</h2>
+
+  <div class="contact-container">
+
+    <div class="contact-info">
+      <p><strong>Email:</strong> support@aerothotic.com</p>
+      <p><strong>Phone:</strong> (737) 204-5537</p>
+      <p><strong>Address:</strong> 9310 Metric Blvd, Austin, TX 78758</p>
+
+      <iframe 
+        src="https://maps.google.com/maps?q=9310%20Metric%20Blvd%20Austin%20TX%2078758&t=&z=13&ie=UTF8&iwloc=&output=embed">
+      </iframe>
+    </div>
+
+    <div class="contact-form">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button onclick="alert('Message Sent!')">Send Message</button>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Aerothotic</p>
+</footer>
+
+</body>
+</html>
